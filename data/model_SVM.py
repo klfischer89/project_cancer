@@ -19,7 +19,7 @@ model = GridSearchCV(SVC(), param_grid = {
     'kernel': ["rbf"],
     'gamma': [0.01, 0.1, 1, 10],
     "C": [0.01, 0.1, 0.5, 1, 5, 10]
-}, cv = RepeatedKFold(), n_jobs = 15)
+}, cv = RepeatedKFold(), n_jobs = 4)
 
 model.fit(X_train, y_train)
 
