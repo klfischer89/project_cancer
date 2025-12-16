@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV, RepeatedKFol
 from sklearn.linear_model import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv("../data/Krebs/cancer.csv")
+df = pd.read_csv("./data/cancer.csv")
 df.drop("id", axis = 1, inplace = True)
 df["diagnosis"] = df["diagnosis"] == "M"
 
